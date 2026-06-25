@@ -1,0 +1,18 @@
+@import "./variables.css";
+@import "./reset.css";
+@import "./animations.css";
+
+body{
+    background:var(--bg-primary);
+    color:var(--text-primary);
+    font-family:var(--body-font);
+}
+
+section{
+    padding:120px 8%;
+}
+
+.container{
+    max-width:var(--container);
+    margin:auto;
+}
