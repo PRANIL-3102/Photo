@@ -6,7 +6,9 @@ function Navbar() {
       <nav className="navbar">
 
         <div className="logo">
-          <h2>PhotographerBhaiya</h2>
+          <h2>Photographer
+            <span>Bhaiya</span>
+          </h2>
         </div>
 
         <div className="nav-links">

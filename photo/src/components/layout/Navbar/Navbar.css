@@ -1,73 +1,93 @@
-.header{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    background: transparent;
-    transition: all .4s ease;
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: transparent;
+  transition: all 0.4s ease;
 }
 
-.navbar{
-    width: 100%;
-    max-width: var(--container);
+.navbar {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 22px 40px;
 
-    margin: 0 auto;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 25px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo h2{
-    font-family: var(--heading-font);
-
-    font-size: 2rem;
-
-    font-weight: 600;
-
-    letter-spacing: 1px;
-
-    color: var(--text-primary);
-
-    cursor: pointer;
+.logo h2 {
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.logo span {
+  color: var(--accent);
+}
+.nav-links ul {
+  display: flex;
+  align-items: center;
+  gap: 45px;
 }
 
-.nav-links ul{
-    display:flex;
-    align-items:center;
-    gap:45px;
+.nav-links li {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: var(--transition);
 }
 
-.nav-links li{
-    position:relative;
-
-    font-size:.95rem;
-
-    font-weight:500;
-
-    color:var(--text-primary);
-
-    cursor:pointer;
-
-    transition:var(--transition);
+.nav-links li:hover {
+  color: var(--accent);
 }
-.nav-links li:hover{
-    color: #D4AF37;
+
+.nav-links li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+
+  width: 0;
+  height: 2px;
+
+  background: var(--accent);
+
+  transform: translateX(-50%);
+  transition: var(--transition);
 }
-.nav-btn button{
-    padding: 14px 28px;
-    border-radius: 50px;
-    cursor: pointer;
-    background: #D4AF37;
-    color: #111;
-    font-weight: 600;
-    border: none;
-    border-radius: 50px;
-    transition: var(--transition);
+
+.nav-links li:hover::after {
+  width: 100%;
 }
-.nav-btn button:hover{
-    transform: translateY(-3px);
+
+.nav-btn button {
+  background: var(--accent);
+  color: #111;
+  border: 2px solid var(--accent);
+
+  padding: 14px 30px;
+
+  border-radius: 50px;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  transition: var(--transition);
+
+  cursor: pointer;
+}
+
+.nav-btn button:hover {
+  background: transparent;
+  color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.25);
 }
