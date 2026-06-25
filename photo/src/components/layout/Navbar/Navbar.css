@@ -19,14 +19,27 @@
   align-items: center;
 }
 
-.logo h2 {
-  font-family: var(--heading-font);
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  letter-spacing: 1px;
-  cursor: pointer;
+.logo h2{
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1;
+
+    cursor: pointer;
 }
+.logo p{
+    font-size: .75rem;
+
+    color: var(--text-secondary);
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    margin-top: 6px;
+}
+
 .logo span {
   color: var(--accent);
 }
@@ -68,23 +81,47 @@
   width: 100%;
 }
 
-.nav-btn button {
-  background: var(--accent);
-  color: #111;
-  border: 2px solid var(--accent);
+.nav-btn button{
+    display:flex;
+    align-items:center;
+    gap:12px;
 
-  padding: 14px 30px;
+    background:var(--accent);
 
-  border-radius: 50px;
+    color:#111;
 
-  font-size: 0.95rem;
-  font-weight: 600;
+    padding:15px 32px;
 
-  transition: var(--transition);
+    border-radius:50px;
 
-  cursor: pointer;
+    border:2px solid var(--accent);
+
+    font-weight:600;
+
+    transition:var(--transition);
 }
+.nav-btn button{
+    display:flex;
+    align-items:center;
+    gap:12px;
 
+    background:var(--accent);
+
+    color:#111;
+
+    padding:15px 32px;
+
+    border-radius:50px;
+
+    border:2px solid var(--accent);
+
+    font-weight:600;
+
+    transition:var(--transition);
+}
+.nav-btn button:hover span{
+    transform:translateX(6px);
+}
 .nav-btn button:hover {
   background: transparent;
   color: var(--accent);

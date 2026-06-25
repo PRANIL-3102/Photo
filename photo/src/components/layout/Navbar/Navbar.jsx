@@ -6,10 +6,13 @@ function Navbar() {
       <nav className="navbar">
 
         <div className="logo">
-          <h2>Photographer
-            <span>Bhaiya</span>
-          </h2>
-        </div>
+    <h2>
+        Photographer
+        <span>Bhaiya</span>
+    </h2>
+
+    <p>Capturing Stories Forever</p>
+</div>
 
         <div className="nav-links">
           <ul>
@@ -22,7 +25,10 @@ function Navbar() {
         </div>
 
         <div className="nav-btn">
-          <button>Book Your Story →</button>
+          <button>
+    Book Your Story
+    <span>→</span>
+</button>
         </div>
 
       </nav>
