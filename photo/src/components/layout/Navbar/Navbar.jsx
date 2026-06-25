@@ -8,7 +8,7 @@ function Navbar() {
         <div className="logo">
     <h2>
         Photographer
-        <span>Bhaiya</span>
+        <span>Vaiya</span>
     </h2>
 
     <p>Capturing Stories Forever</p>
