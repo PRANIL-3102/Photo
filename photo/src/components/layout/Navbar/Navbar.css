@@ -128,3 +128,29 @@
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(212, 175, 55, 0.25);
 }
+.menu-icon{
+    display:none;
+    font-size:2rem;
+    color:var(--text-primary);
+    cursor:pointer;
+}
+
+@media (max-width: 992px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .nav-btn{
+        display:none;
+    }
+
+    .menu-icon{
+        display:block;
+    }
+
+    .navbar{
+        padding:20px;
+    }
+
+}

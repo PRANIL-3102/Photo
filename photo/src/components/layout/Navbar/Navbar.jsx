@@ -1,6 +1,9 @@
+import { useState } from "react";
 import "./Navbar.css";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
 function Navbar() {
+    const [menuOpen, setMenuOpen] = useState(false);
   return (
     <header className="header">
       <nav className="navbar">
@@ -24,12 +27,19 @@ function Navbar() {
           </ul>
         </div>
 
-        <div className="nav-btn">
-          <button>
+       <div className="nav-btn">
+  <button>
     Book Your Story
     <span>→</span>
-</button>
-        </div>
+  </button>
+</div>
+
+<div
+    className="menu-icon"
+    onClick={() => setMenuOpen(!menuOpen)}
+>
+    <HiOutlineMenuAlt3 />
+</div>
 
       </nav>
     </header>
