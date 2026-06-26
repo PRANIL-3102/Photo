@@ -137,14 +137,33 @@
 }
 
 .scroll-indicator span{
-    display: block;
+    display:block;
 
-    width: 2px;
-    height: 50px;
+    width:2px;
+    height:55px;
 
-    background: var(--text-primary);
+    background:var(--text-primary);
 
-    opacity: .6;
+    animation:scrollMove 1.8s infinite;
+}
+
+@keyframes scrollMove{
+
+    0%{
+        transform:translateY(0);
+        opacity:1;
+    }
+
+    50%{
+        transform:translateY(10px);
+        opacity:.4;
+    }
+
+    100%{
+        transform:translateY(0);
+        opacity:1;
+    }
+
 }
 
 @media (max-width:768px){
