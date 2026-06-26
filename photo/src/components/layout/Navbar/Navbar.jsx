@@ -1,12 +1,38 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Navbar.css";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 import { motion, AnimatePresence } from "framer-motion";
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+    useEffect(() => {
+
+    const handleScroll = () => {
+        setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+
+},[]);
+
+    useEffect(() => {
+
+    if(menuOpen){
+        document.body.style.overflow = "hidden";
+    }else{
+        document.body.style.overflow = "auto";
+    }
+
+    return () => {
+        document.body.style.overflow = "auto";
+    };
+
+},[menuOpen]);
   return (
-    <header className="header">
+    <header className={`header ${isScrolled ? "scrolled" : ""}`}>
       <nav className="navbar">
 
         <div className="logo">
@@ -39,7 +65,7 @@ function Navbar() {
   className="menu-icon"
   onClick={() => setMenuOpen(!menuOpen)}
 >
-  <HiOutlineMenuAlt3 />
+  {menuOpen ? <HiOutlineX /> : <HiOutlineMenuAlt3 />}
 </div>
 
 <AnimatePresence>
@@ -55,7 +81,7 @@ function Navbar() {
 
       <motion.div
         className="mobile-menu"
-        initial={{ x: "100%" }}
+        initial={{ x: "110%" }}
         animate={{ x: 0 }}
         exit={{ x: "100%" }}
         transition={{
