@@ -19,23 +19,11 @@ function Hero() {
   return (
 
     <section className="hero">
-
-      {/* Background Video */}
-      <video
-        className="hero-video"
-        autoPlay
-        muted
-        loop
-        playsInline
-      >
-        {/* Video Source */}
-      </video>
-
-      {/* Overlay */}
-      <div className="hero-overlay"></div>
-
+<div className="hero-bg"></div>
       {/* Hero Content */}
-      <motion.div className="hero-content">
+      <div className="hero-container">
+
+  <motion.div className="hero-content">
 
         <motion.p
     className="hero-subtitle"
@@ -53,11 +41,10 @@ function Hero() {
     animate="visible"
     transition={{ delay: .3 }}
 >
-          Not Every Moment
+          Every Frame Holds
           <br />
-          Lasts Forever.
+          A Forever Memory.
           <br />
-          But Every Memory Can.
         </motion.h1>
 
         <p className="hero-description">
@@ -94,8 +81,19 @@ function Hero() {
 
         <span></span>
 
-      </motion.div>
+        </motion.div>
 
+  <div className="hero-image">
+
+    <div className="image-card">
+
+      {/* Hero Image Goes Here */}
+
+    </div>
+
+  </div>
+
+</div>
     </section>
   );
 }
