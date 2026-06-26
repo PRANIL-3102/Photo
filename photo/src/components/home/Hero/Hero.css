@@ -153,17 +153,14 @@
         transform:translateY(0);
         opacity:1;
     }
-
     50%{
         transform:translateY(10px);
         opacity:.4;
     }
-
     100%{
         transform:translateY(0);
         opacity:1;
     }
-
 }
 
 @media (max-width:768px){
