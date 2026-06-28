@@ -1,5 +1,6 @@
 import { motion } from  "framer-motion";
 import "./Hero.css";
+import heroImage from "../../../assets/images/ag.png";
 
 function Hero() {
   const fadeUp = {
@@ -25,14 +26,14 @@ function Hero() {
 
   <motion.div className="hero-content">
 
-        <motion.p
-    className="hero-subtitle"
-    variants={fadeUp}
-    initial="hidden"
-    animate="visible"
+<motion.div
+    className="hero-badge"
+    initial={{ opacity: 0, y: -20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
 >
-          Wedding • Pre-Wedding • Birthday • Events
-        </motion.p>
+    Trusted for Weddings • Love Stories • Celebrations
+</motion.div>
 
         <motion.h1
     className="hero-title"
@@ -48,8 +49,8 @@ function Hero() {
         </motion.h1>
 
         <p className="hero-description">
-          Crafting timeless memories through cinematic storytelling and
-          heartfelt photography.
+          From wedding vows to birthday laughter, every celebration deserves to be
+          remembered with honesty, emotion, and timeless artistry.
         </p>
 
         <motion.div
@@ -65,33 +66,37 @@ function Hero() {
           </button>
 
           <button className="book-btn">
-            Book Your Story
+            Book Your Session →
           </button>
 
         </motion.div>
         </motion.div>
 
       {/* Scroll Indicator */}
-      <motion.div
-    className="scroll-indicator"
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ delay: 1.4 }}
+      <div className="scroll-indicator">
+      <div className="mouse">
+        <span></span>
+      </div>
+        </div>
+
+  <motion.div
+    className="image-card"
+    initial={{opacity:0,x:60}}
+    animate={{opacity:1,x:0}}
+    transition={{
+        delay:.5,
+        duration:1
+    }}
 >
 
-        <span></span>
-
-        </motion.div>
-
-  <div className="hero-image">
-
     <div className="image-card">
+    <img
+        src={heroImage}
+        alt="PhotographerVaiya Hero"
+    />
+</div>
 
-      {/* Hero Image Goes Here */}
-
-    </div>
-
-  </div>
+  </motion.div>
 
 </div>
     </section>
