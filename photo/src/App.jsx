@@ -3,6 +3,7 @@ import Hero from "./components/home/Hero/Hero";
 import FeaturedStory from "./components/home/FeaturedStory/FeaturedStory";
 import WhyChoose from "./components/home/WhyChoose/WhyChoose";
 import Services from "./components/home/Services/Services";
+import Gallery from "./components/home/Gallery/Gallery";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <FeaturedStory />
       <WhyChoose />
       <Services />
+      <Gallery />
     </>
   );
 }
