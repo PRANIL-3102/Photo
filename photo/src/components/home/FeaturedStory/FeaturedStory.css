@@ -19,13 +19,13 @@
 }
 .story-image{
     position:relative;
-    width:100%;
+    width:92%;
     aspect-ratio:4/5;
     overflow:hidden;
     border-radius:28px;
     transform:rotate(3deg);
     box-shadow:
-        0 25px 70px rgba(0,0,0,.45);
+        0 35px 90px rgba(0,0,0,.55);
     animation:floatstory 6s ease-in-out infinite;
 }
 @keyframes floatStory{
@@ -122,8 +122,9 @@
 }
 
 .story-image img{
-    width:100%;
+    width:92%;
     height:100%;
+    margin:auto;
     object-fit:cover;
     transition:transform .8s ease;
 }

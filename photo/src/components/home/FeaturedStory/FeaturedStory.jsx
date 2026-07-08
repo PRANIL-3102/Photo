@@ -35,7 +35,7 @@ function FeaturedStory() {
           </p>
 
 <a href="#" className="story-link">
-    View Full Story
+    View Their Story
     <span>→</span>
 </a>
 
