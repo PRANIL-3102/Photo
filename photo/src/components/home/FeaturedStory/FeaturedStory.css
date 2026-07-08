@@ -69,7 +69,7 @@
     margin-bottom:40px;
     color:var(--text-secondary);
 }
-@media(max-width:1024px){
+@media(max-width:728px){
 .story-container{
     grid-template-columns:1fr;
     gap:50px;
