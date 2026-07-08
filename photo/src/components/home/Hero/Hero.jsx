@@ -79,24 +79,20 @@ function Hero() {
       </div>
         </div>
 
-  <motion.div
-    className="image-card"
-    initial={{opacity:0,x:60}}
-    animate={{opacity:1,x:0}}
-    transition={{
-        delay:.5,
-        duration:1
-    }}
+<motion.div
+  className="image-card"
+  initial={{ opacity: 0, x: 60 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{
+    delay: 0.5,
+    duration: 1,
+  }}
 >
-
-    <div className="image-card">
-    <img
-        src={heroImage}
-        alt="PhotographerVaiya Hero"
-    />
-</div>
-
-  </motion.div>
+  <img
+    src={heroImage}
+    alt="PhotographerVaiya Hero"
+  />
+</motion.div>
 
 </div>
     </section>

@@ -25,7 +25,8 @@ function FeaturedStory() {
           </h2>
 
           <h3>
-            A Wedding to Remember
+            A Love Story
+Worth Remembering.
           </h3>
 
           <p className="story-description">
