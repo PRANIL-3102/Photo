@@ -17,7 +17,7 @@ function FeaturedStory() {
         <div className="story-content">
 
           <p className="story-label">
-            FEATURED STORY
+            A Story We Captured
           </p>
 
           <h2>
