@@ -1,4 +1,5 @@
 import "./FeaturedStory.css";
+import storyImage from "../../../assets/images/s1.png";
 
 function FeaturedStory() {
   return (
@@ -7,7 +8,10 @@ function FeaturedStory() {
       <div className="story-container">
 
         <div className="story-image">
-
+    <img
+        src={storyImage}
+        alt="Featured Wedding Story"
+    />
         </div>
 
         <div className="story-content">
