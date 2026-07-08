@@ -17,9 +17,8 @@ function Hero() {
     },
   },
 };
-  return (
-
-    <section className="hero">
+    return (
+        <section id="home" className="hero">
 <div className="hero-bg"></div>
       {/* Hero Content */}
       <div className="hero-container">

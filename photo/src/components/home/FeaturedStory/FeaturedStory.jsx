@@ -3,7 +3,7 @@ import storyImage from "../../../assets/images/s1.png";
 
 function FeaturedStory() {
   return (
-    <section className="featured-story">
+    <section id="stories" className="featured-story">
 
       <div className="story-container">
 

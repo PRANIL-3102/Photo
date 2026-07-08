@@ -9,7 +9,7 @@ import {
 
 function Services() {
 return (
-    <section className="services">
+    <section id="services" className="services">
 
     <div className="services-header">
 

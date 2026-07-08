@@ -8,7 +8,7 @@ import {
 function WhyChoose() {
 
     return (
-        <section className="why-choose">
+        <section id="about" className="why-choose">
             <div className="why-header">
                 <p className="section-label">
                     WHY CHOOSE US
@@ -39,7 +39,7 @@ function WhyChoose() {
                     </p>
                 </div>
                 <div className="why-card">
-                   <div className="card-icon">
+                <div className="card-icon">
     <HiOutlineClock />
 </div>
                     <h3>Fast Delivery</h3>
@@ -48,7 +48,7 @@ function WhyChoose() {
                     </p>
                 </div>
                 <div className="why-card">
-                   <div className="card-icon">
+                <div className="card-icon">
     <HiOutlineSparkles />
 </div>
 
