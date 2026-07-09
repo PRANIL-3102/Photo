@@ -3,6 +3,30 @@ import "./Hero.css";
 import heroImage from "../../../assets/images/ag.png";
 
 function Hero() {
+  const scrollToSection = (id) => {
+
+    const section = document.getElementById(id);
+
+    if(section){
+
+        const yOffset = -90;
+
+        const y =
+            section.getBoundingClientRect().top +
+            window.pageYOffset +
+            yOffset;
+
+        window.scrollTo({
+
+            top:y,
+
+            behavior:"smooth",
+
+        });
+
+    }
+
+};
   const fadeUp = {
   hidden: {
     opacity: 0,
@@ -64,7 +88,10 @@ function Hero() {
             Explore Stories
           </button>
 
-          <button className="book-btn">
+          <button 
+          className="book-btn"
+          onClick={() => scrollToSection("contact")}
+          >
             Book Your Session →
           </button>
 

@@ -1,5 +1,9 @@
 import "./Gallery.css";
-
+import { motion } from "framer-motion";
+import {
+    fadeUp,
+    staggerContainer
+} from "../../../utils/motion";
 import img1 from "../../../assets/images/ab.jpeg";
 import img2 from "../../../assets/images/ac.png";
 import img3 from "../../../assets/images/ak.jpeg";
@@ -41,9 +45,21 @@ const gallery = [
 ];
 function Gallery(){
     return(
-<section
+<motion.section
+
 id="gallery"
-className="gallery">
+
+className="gallery"
+
+variants={fadeUp}
+
+initial="hidden"
+
+whileInView="show"
+
+viewport={{ once: true, amount: 0.2 }}
+
+>
 <div className="gallery-header">
 <p className="section-label">
 OUR GALLERY
@@ -54,12 +70,29 @@ Every Frame
 Has A Story.
 </h2>
 </div>
-<div className="gallery-grid">
+<motion.div
+
+className="gallery-grid"
+
+variants={staggerContainer}
+
+initial="hidden"
+
+whileInView="show"
+
+viewport={{ once: true }}
+
+>
 {
 gallery.map((item,index)=>(
-<div
+<motion.div
+
 key={index}
-className="gallery-card">
+
+className="gallery-card"
+
+variants={fadeUp}
+>
 <img
 src={item.image}
 alt={item.title}
@@ -70,11 +103,11 @@ alt={item.title}
 View →
 </span>
 </div>
-</div>
+</motion.div>
 ))
 }
-</div>
-</section>
+</motion.div>
+</motion.section>
     )
 }
 export default Gallery;

@@ -1,0 +1,304 @@
+/* ==========================
+   FADE UP
+========================== */
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    animation:fadeUp .8s ease forwards;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+/* ==========================
+   FADE DOWN
+========================== */
+
+.fade-down{
+
+    opacity:0;
+
+    transform:translateY(-40px);
+
+    animation:fadeDown .8s ease forwards;
+
+}
+
+@keyframes fadeDown{
+
+from{
+
+opacity:0;
+
+transform:translateY(-40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+/* ==========================
+   FADE LEFT
+========================== */
+
+.fade-left{
+
+    opacity:0;
+
+    transform:translateX(-60px);
+
+    animation:fadeLeft .8s ease forwards;
+
+}
+
+@keyframes fadeLeft{
+
+from{
+
+opacity:0;
+
+transform:translateX(-60px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+
+
+/* ==========================
+   FADE RIGHT
+========================== */
+
+.fade-right{
+
+    opacity:0;
+
+    transform:translateX(60px);
+
+    animation:fadeRight .8s ease forwards;
+
+}
+
+@keyframes fadeRight{
+
+from{
+
+opacity:0;
+
+transform:translateX(60px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+
+
+/* ==========================
+   ZOOM
+========================== */
+
+.zoom-in{
+
+    opacity:0;
+
+    transform:scale(.9);
+
+    animation:zoomIn .8s ease forwards;
+
+}
+
+@keyframes zoomIn{
+
+from{
+
+opacity:0;
+
+transform:scale(.9);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+
+/* ==========================
+   FLOAT
+========================== */
+
+.float{
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+
+/* ==========================
+   HOVER LIFT
+========================== */
+
+.hover-lift{
+
+    transition:.35s ease;
+
+}
+
+.hover-lift:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+/* ==========================
+   IMAGE ZOOM
+========================== */
+
+.image-zoom{
+
+    overflow:hidden;
+
+}
+
+.image-zoom img{
+
+    transition:.7s ease;
+
+}
+
+.image-zoom:hover img{
+
+    transform:scale(1.08);
+
+}
+
+
+/* ==========================
+   BUTTON PRESS
+========================== */
+
+.btn-pop{
+
+    transition:.3s;
+
+}
+
+.btn-pop:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.btn-pop:active{
+
+    transform:scale(.96);
+
+}
+
+
+/* ==========================
+   STAGGER DELAYS
+========================== */
+
+.delay-1{
+
+animation-delay:.1s;
+
+}
+
+.delay-2{
+
+animation-delay:.2s;
+
+}
+
+.delay-3{
+
+animation-delay:.3s;
+
+}
+
+.delay-4{
+
+animation-delay:.4s;
+
+}
+
+.delay-5{
+
+animation-delay:.5s;
+
+}
