@@ -145,3 +145,29 @@ text-align:center;
 }
 
 }
+
+.developer-link{
+
+    margin-left:24px;
+
+}
+
+.developer-link a{
+
+    text-decoration:none;
+
+    color:var(--text-secondary);
+
+    font-size:.9rem;
+
+    font-weight:500;
+
+    transition:.3s ease;
+
+}
+
+.developer-link a:hover{
+
+    color:var(--accent);
+
+}

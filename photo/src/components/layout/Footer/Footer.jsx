@@ -61,10 +61,18 @@ function Footer() {
           All Rights Reserved.
         </p>
 
-        <p>
-          Designed & Developed by
-          <span> Pranil Singha Mahapatra</span>
-        </p>
+        <div className="developer-link">
+
+    <a
+        href="https://pranilsmp.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Designed And Devloped By
+        <span> Pranil SMP ↗</span> 
+    </a>
+
+</div>
 
       </div>
 
