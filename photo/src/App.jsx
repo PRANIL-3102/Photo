@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route,} from "react-router-dom";
 import Navbar from "./components/layout/Navbar/Navbar";
 import Hero from "./components/home/Hero/Hero";
 import FeaturedStory from "./components/home/FeaturedStory/FeaturedStory";
@@ -10,6 +10,8 @@ import Footer from "./components/layout/Footer/Footer";
 import Loader from "./components/layout/Loader/Loader";
 import Login from "./admin/Login/Login";
 import Dashboard from "./admin/Dashboard/Dashboard";
+import GalleryManager from "./admin/GalleryManager/GalleryManager";
+import ProtectedRoute from "./admin/ProtectedRoute";
 import "./styles/animations.css";
 import { useState, useEffect } from "react";
 function Home() {
@@ -39,8 +41,8 @@ function Home() {
     );
 }
 
-function App(){
 
+function App(){
     return(
         <Routes>
             <Route
@@ -52,10 +54,24 @@ function App(){
                 element={<Login />}
             />
             <Route
-                path="/dashboard"
-                element={<Dashboard />}
-            />
+    path="/dashboard"
+    element={
+        <ProtectedRoute>
+            <Dashboard />
+        </ProtectedRoute>
+    }
+/>
+
+<Route
+    path="/dashboard/gallery"
+    element={
+        <ProtectedRoute>
+            <GalleryManager />
+        </ProtectedRoute>
+    }
+/>
         </Routes>
+        
     );
 }
 

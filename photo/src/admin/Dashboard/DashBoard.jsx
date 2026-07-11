@@ -40,20 +40,16 @@ function Dashboard() {
 
             <div className="dashboard-grid">
 
-                <Link
-                    to="/dashboard/gallery"
-                    className="dashboard-card"
-                >
+<Link
+    to="/dashboard/gallery"
+    className="dashboard-card"
+>
 
-                    <FaImages />
+    <FaImages />
 
-                    <h3>
+    <h3>Gallery Manager</h3>
 
-                        Gallery Manager
-
-                    </h3>
-
-                </Link>
+</Link>
 
                 <Link
                     to="/dashboard/featured"
